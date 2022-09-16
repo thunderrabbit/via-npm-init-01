@@ -1,0 +1,19 @@
+{
+  "name": "via-npm-init-01",
+  "version": "0.0.1",
+  "description": "Run the f away; I'm just going through https://www.tutorialspoint.com/expressjs/expressjs_environment.htm to figure out what's what",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:thunderrabbit/via-npm-init-01.git"
+  },
+  "author": "Rob Nugen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thunderrabbit/via-npm-init-01/issues"
+  },
+  "homepage": "https://github.com/thunderrabbit/via-npm-init-01#readme"
+}
