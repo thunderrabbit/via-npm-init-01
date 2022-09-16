@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-const square = require("./square"); // Here we require() the name of the file without the (optional) .js file extension
+const square = require("./square.js"); // .js file extension is optional
 
 app.get('/', function (req, res, next) {
    res.send(`The area of a square with a width of 4 is ${square.area(4)}`);
