@@ -7,7 +7,8 @@ const wiki = require("./middleware/wiki.js");  //  wiki.js will handle some rout
 
 // BEGIN example middleware function
 const a_middleware_function = function (req, res, next) {
-    console.log("in a_middleware_function");    // why won't logger work here?  it's defined.. hmmm
+    // why won't logger work here?  it's defined.. hmmm
+    console.log("in a_middleware_function", req.url, Date.now(), '"');
     next(); // Call next() so Express will call the next middleware function in the chain.
 };
 // END example middleware function
