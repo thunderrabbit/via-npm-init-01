@@ -18,6 +18,8 @@ app.use(a_middleware_function);
 
 app.use("/wiki", wiki);   // tell wiki.js routes to be available from /wiki
 
+app.use("/someroute", a_middleware_function);  // /someroute shows 404 but middleware writes to console.log
+
 app.get('/', function (req, res, next) {
    res.send(`The area of a square with a width of 4 is ${square.area(4)}`);
    next(); // pass control to the next handler
