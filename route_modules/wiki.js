@@ -2,7 +2,7 @@
 
 const express = require("express");
 const router = express.Router();
-const square = require("./square.js"); // must be required in wiki.js even though already required in index.js
+const square = require("../middleware/square.js"); // must be required in wiki.js even though already required in index.js
 
 // Home page route
 router.get("/", function (req, res) {

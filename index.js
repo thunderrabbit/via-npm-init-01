@@ -3,7 +3,7 @@ const logger = require("morgan");     // HTTP request logger middleware
 var app = express();
 
 const square = require("./middleware/square.js"); // .js file extension is optional
-const wiki = require("./middleware/wiki.js");  //  wiki.js will handle some routes
+const wiki = require("./route_modules/wiki.js");  //  wiki.js will handle some routes
 
 // BEGIN example middleware function
 const a_middleware_function = function (req, res, next) {
