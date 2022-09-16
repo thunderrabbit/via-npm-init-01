@@ -6,6 +6,8 @@ const square = require("./middleware/square.js"); // .js file extension is optio
 const wiki = require("./middleware/wiki.js");  //  wiki.js will handle some routes
 
 app.use(logger("dave_was_here"));  // write string into the same place as console.log
+app.use(logger('tiny'));    // e.g.  GET /wiki/square/4 304 - - 0.277 ms
+
 app.use("/wiki", wiki);   // tell wiki.js routes to be available from /wiki
 
 app.get('/', function (req, res, next) {
