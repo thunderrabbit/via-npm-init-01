@@ -2,8 +2,8 @@ var express = require('express');
 const logger = require("morgan");     // HTTP request logger middleware
 var app = express();
 
-const square = require("./square.js"); // .js file extension is optional
-const wiki = require("./wiki.js");  //  wiki.js will handle some routes
+const square = require("./middleware/square.js"); // .js file extension is optional
+const wiki = require("./middleware/wiki.js");  //  wiki.js will handle some routes
 
 app.use(logger("dave_was_here"));  // write string into the same place as console.log
 app.use("/wiki", wiki);   // tell wiki.js routes to be available from /wiki
