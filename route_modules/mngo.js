@@ -19,7 +19,7 @@ const router = express.Router();
 
 // Home page route
 router.get("/", function (req, res) {
-  res.send("Mngo home page");
+    res.send("Mngo home page <br> Try <a href='mngo/about'>about</a>");
 });
 
 // About page route
